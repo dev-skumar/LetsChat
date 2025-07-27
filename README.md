@@ -1,18 +1,17 @@
-This is a Kotlin Multiplatform project targeting Android, Web, Desktop.
+This is a Kotlin Multiplatform Project targeting Android, Web & Desktop.
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+To run the application on:
+  - **Android** : use default `composeApp` gradle run configuration.
+  - **Web** : run this command in terminal ==> `./gradlew wasmJsBrowserDevelopmentRun`
+  - **Desktop** : run this command in terminal ==> `./gradlew desktopRun`
+  <br> <br>
+    If Desktop app doesn't run, use this alternative way:
+    - Step 1 : open `main.kt` file from `desktopMain` folder of composeApp.
+    - Step 2 : run main function using `run` gutter icon. This will still not work but new **MainKt** run configuration will be created and selected.
+    - Step 3 : now run this command in terminal ==> `./gradlew run`
 
+<br>
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+---
 
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [YouTrack](https://youtrack.jetbrains.com/newIssue?project=CMP).
-
-You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+<br>
