@@ -39,4 +39,6 @@ plugins {
 include(":core:domain")
 include(":core:presentation")
 
+include(":service:preferences")
+
 include(":composeApp")
