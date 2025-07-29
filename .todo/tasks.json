@@ -44,5 +44,28 @@
       }
     },
     "isImported": false
+  },
+  {
+    "id": "TASK_14",
+    "priority": "CRITICAL",
+    "tags": [
+      "feature"
+    ],
+    "description": "Implement Multiplatform-settings library\n- create new :service:preferences module\n- create custom implementation for serialized string storage using kotlin-serialization to store data class as string",
+    "status": "TODO",
+    "date": {
+      "date": {
+        "year": 2025,
+        "month": 7,
+        "day": 28
+      },
+      "time": {
+        "hour": 23,
+        "minute": 18,
+        "second": 36,
+        "nano": 11478500
+      }
+    },
+    "isImported": false
   }
 ]
