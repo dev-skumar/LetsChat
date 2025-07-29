@@ -55,6 +55,9 @@ kotlin {
         }
 
         commonMain.dependencies {
+
+            implementation(projects.core.presentation)
+
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material3)
