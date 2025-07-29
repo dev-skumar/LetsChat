@@ -1,6 +1,7 @@
 rootProject.name = "LetsChat"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
+
 pluginManagement {
     repositories {
         google {
@@ -15,6 +16,7 @@ pluginManagement {
     }
 }
 
+
 dependencyResolutionManagement {
     repositories {
         google {
@@ -28,10 +30,13 @@ dependencyResolutionManagement {
     }
 }
 
+
 plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
 }
 
+
 include(":core:domain")
+include(":core:presentation")
 
 include(":composeApp")
