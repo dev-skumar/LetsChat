@@ -52,7 +52,7 @@
       "feature"
     ],
     "description": "Implement Multiplatform-settings library\n- create new :service:preferences module\n- create custom implementation for serialized string storage using kotlin-serialization to store data class as string",
-    "status": "TODO",
+    "status": "IN_PROGRESS",
     "date": {
       "date": {
         "year": 2025,

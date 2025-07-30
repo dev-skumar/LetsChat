@@ -56,7 +56,10 @@ kotlin {
 
         commonMain.dependencies {
 
+            implementation(projects.core.domain)
             implementation(projects.core.presentation)
+
+            implementation(projects.service.preferences)
 
             implementation(compose.runtime)
             implementation(compose.foundation)
@@ -67,8 +70,8 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtimeCompose)
 
-            api(project.dependencies.platform(libs.koin.bom))
-            api(libs.koin.core)
+            implementation(project.dependencies.platform(libs.koin.bom))
+            implementation(libs.koin.core)
             implementation(libs.koin.compose)
             implementation(libs.koin.compose.viewmodel)
         }

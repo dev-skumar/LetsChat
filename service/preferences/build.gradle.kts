@@ -26,7 +26,12 @@ kotlin {
 
         val commonMain by getting {
             dependencies {
-
+                implementation(projects.core.domain)
+                implementation(libs.kotlinx.coroutines.core)
+                implementation(libs.multiplatform.settings.no.arg)
+                implementation(libs.multiplatform.settings.coroutines)
+                implementation(project.dependencies.platform(libs.koin.bom))
+                implementation(libs.koin.core)
             }
         }
         
