@@ -49,6 +49,7 @@ koin-compose-viewmodel = { group = "io.insert-koin", name = "koin-compose-viewmo
 
 multiplatform-settings-no-arg = { group = "com.russhwolf", name = "multiplatform-settings-no-arg", version.ref = "multiplatform-settings" }
 multiplatform-settings-coroutines = { group = "com.russhwolf", name = "multiplatform-settings-coroutines", version.ref = "multiplatform-settings" }
+multiplatform-settings-make-observable = { group = "com.russhwolf", name = "multiplatform-settings-make-observable", version.ref = "multiplatform-settings" }
 
 
 # _____Test_____

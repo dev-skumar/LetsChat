@@ -18,7 +18,6 @@ kotlin {
     @OptIn(ExperimentalWasmDsl::class)
     wasmJs {
         browser()
-        binaries.library()
     }
 
 
@@ -30,6 +29,7 @@ kotlin {
                 implementation(libs.kotlinx.coroutines.core)
                 implementation(libs.multiplatform.settings.no.arg)
                 implementation(libs.multiplatform.settings.coroutines)
+                implementation(libs.multiplatform.settings.make.observable)
                 implementation(project.dependencies.platform(libs.koin.bom))
                 implementation(libs.koin.core)
             }
