@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.androidKotlinMultiplatformLibrary)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
+    alias(libs.plugins.kotlinSerialization)
 }
 
 
@@ -34,6 +35,7 @@ kotlin {
                 implementation(compose.ui)
 //                implementation(compose.components.resources)
 //                implementation(compose.components.uiToolingPreview)
+                implementation(libs.kotlinx.serialization.json)
             }
         }
 

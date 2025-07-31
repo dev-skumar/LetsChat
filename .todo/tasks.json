@@ -23,36 +23,13 @@
     "isImported": false
   },
   {
-    "id": "TASK_11",
-    "priority": "HIGH",
-    "tags": [
-      "feature"
-    ],
-    "description": "Implement Navigation 3",
-    "status": "TODO",
-    "date": {
-      "date": {
-        "year": 2025,
-        "month": 7,
-        "day": 27
-      },
-      "time": {
-        "hour": 18,
-        "minute": 11,
-        "second": 0,
-        "nano": 351338500
-      }
-    },
-    "isImported": false
-  },
-  {
     "id": "TASK_14",
     "priority": "CRITICAL",
     "tags": [
       "feature"
     ],
     "description": "Implement Multiplatform-settings library\n- create new :service:preferences module\n- create custom implementation for serialized string storage using kotlin-serialization to store data class as string",
-    "status": "IN_PROGRESS",
+    "status": "DONE",
     "date": {
       "date": {
         "year": 2025,
@@ -64,6 +41,52 @@
         "minute": 18,
         "second": 36,
         "nano": 11478500
+      }
+    },
+    "isImported": false
+  },
+  {
+    "id": "TASK_17",
+    "priority": "LOW",
+    "tags": [
+      "UI"
+    ],
+    "description": "Implement Global Loading screen. and add it to Navigation graph when block for null appConfig",
+    "status": "TODO",
+    "date": {
+      "date": {
+        "year": 2025,
+        "month": 7,
+        "day": 31
+      },
+      "time": {
+        "hour": 18,
+        "minute": 36,
+        "second": 4,
+        "nano": 21400300
+      }
+    },
+    "isImported": false
+  },
+  {
+    "id": "TASK_21",
+    "priority": "MEDIUM",
+    "tags": [
+      "feature"
+    ],
+    "description": "Implement centralize ErrorController and Error dialog",
+    "status": "TODO",
+    "date": {
+      "date": {
+        "year": 2025,
+        "month": 7,
+        "day": 31
+      },
+      "time": {
+        "hour": 19,
+        "minute": 15,
+        "second": 35,
+        "nano": 828111700
       }
     },
     "isImported": false
