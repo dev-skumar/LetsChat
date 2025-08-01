@@ -9,6 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.compose.rememberNavController
 import dev.skumar.letschat.app.AppViewModel
+import dev.skumar.letschat.core.presentation.components.ModalErrorDialog
 import dev.skumar.letschat.core.presentation.navigation.NavigationAction
 import org.koin.compose.viewmodel.koinViewModel
 
@@ -22,6 +23,7 @@ fun AppNavigation(
 
     val appViewModel = koinViewModel<AppViewModel>()
     val appConfig by appViewModel.appConfig.collectAsStateWithLifecycle()
+    val errorDialog by appViewModel.errorDialog.collectAsStateWithLifecycle()
 
     LaunchedEffect(appViewModel.navActions) {
         appViewModel.navActions.collect { action ->
@@ -42,6 +44,14 @@ fun AppNavigation(
             navController = navController,
             performNavigation = appViewModel::performNavigation
         )
+
+        if (errorDialog != null) {
+
+            ModalErrorDialog(
+                error = errorDialog!!
+            )
+
+        }
 
     }
 

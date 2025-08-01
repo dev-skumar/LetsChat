@@ -1,51 +1,5 @@
 [
   {
-    "id": "TASK_9",
-    "priority": "HIGH",
-    "tags": [
-      "feature"
-    ],
-    "description": "Implement Dependency Injection",
-    "status": "DONE",
-    "date": {
-      "date": {
-        "year": 2025,
-        "month": 7,
-        "day": 27
-      },
-      "time": {
-        "hour": 18,
-        "minute": 10,
-        "second": 32,
-        "nano": 278957500
-      }
-    },
-    "isImported": false
-  },
-  {
-    "id": "TASK_14",
-    "priority": "CRITICAL",
-    "tags": [
-      "feature"
-    ],
-    "description": "Implement Multiplatform-settings library\n- create new :service:preferences module\n- create custom implementation for serialized string storage using kotlin-serialization to store data class as string",
-    "status": "DONE",
-    "date": {
-      "date": {
-        "year": 2025,
-        "month": 7,
-        "day": 28
-      },
-      "time": {
-        "hour": 23,
-        "minute": 18,
-        "second": 36,
-        "nano": 11478500
-      }
-    },
-    "isImported": false
-  },
-  {
     "id": "TASK_17",
     "priority": "LOW",
     "tags": [
@@ -69,24 +23,24 @@
     "isImported": false
   },
   {
-    "id": "TASK_21",
-    "priority": "MEDIUM",
+    "id": "TASK_26",
+    "priority": "LOW",
     "tags": [
-      "feature"
+      "UI"
     ],
-    "description": "Implement centralize ErrorController and Error dialog",
+    "description": "Implement good Error Dialog UI in @Composable ModalErrorDialog",
     "status": "TODO",
     "date": {
       "date": {
         "year": 2025,
-        "month": 7,
-        "day": 31
+        "month": 8,
+        "day": 1
       },
       "time": {
         "hour": 19,
-        "minute": 15,
-        "second": 35,
-        "nano": 828111700
+        "minute": 4,
+        "second": 58,
+        "nano": 666126300
       }
     },
     "isImported": false
