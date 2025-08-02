@@ -44,5 +44,51 @@
       }
     },
     "isImported": false
+  },
+  {
+    "id": "TASK_29",
+    "priority": "LOW",
+    "tags": [
+      "UI"
+    ],
+    "description": "Implement UI for OnboardingScreen",
+    "status": "TODO",
+    "date": {
+      "date": {
+        "year": 2025,
+        "month": 8,
+        "day": 2
+      },
+      "time": {
+        "hour": 11,
+        "minute": 26,
+        "second": 50,
+        "nano": 228623700
+      }
+    },
+    "isImported": false
+  },
+  {
+    "id": "TASK_33",
+    "priority": "MEDIUM",
+    "tags": [
+      "UI"
+    ],
+    "description": "Implement navigation handling for back button press",
+    "status": "TODO",
+    "date": {
+      "date": {
+        "year": 2025,
+        "month": 8,
+        "day": 2
+      },
+      "time": {
+        "hour": 13,
+        "minute": 41,
+        "second": 42,
+        "nano": 897556200
+      }
+    },
+    "isImported": false
   }
 ]

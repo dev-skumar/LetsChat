@@ -5,7 +5,7 @@ import dev.skumar.letschat.service.preferences.repository.PreferencesRepositoryI
 import org.koin.dsl.module
 
 
-val preferencesModule = module {
+val preferencesServiceModule = module {
 
     single<PreferencesRepository> {
         PreferencesRepositoryImpl()
