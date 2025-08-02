@@ -41,4 +41,6 @@ include(":core:presentation")
 
 include(":service:preferences")
 
+include(":feature:settings")
+
 include(":composeApp")
