@@ -18,7 +18,6 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import dev.skumar.letschat.core.domain.preferences.AppConfig
-import dev.skumar.letschat.core.presentation.navigation.NavigationAction
 import dev.skumar.letschat.feature.settings.presentation.onboarding.OnboardingEvent
 import dev.skumar.letschat.feature.settings.presentation.onboarding.OnboardingUiState
 
@@ -27,7 +26,6 @@ import dev.skumar.letschat.feature.settings.presentation.onboarding.OnboardingUi
 fun OnboardingScreen(
     uiState: OnboardingUiState,
     appConfig: AppConfig,
-    performNavigation: (NavigationAction) -> Unit,
     processEvent: (OnboardingEvent) -> Unit,
     modifier: Modifier = Modifier
 ) {

@@ -1,5 +1,6 @@
 package dev.skumar.letschat.di
 
+import dev.skumar.letschat.feature.chat.di.chatFeatureModule
 import dev.skumar.letschat.feature.settings.di.settingsFeatureModule
 import dev.skumar.letschat.service.preferences.di.preferencesServiceModule
 import org.koin.core.context.startKoin
@@ -12,7 +13,8 @@ fun initKoin(config: KoinAppDeclaration? = null) {
         modules(
             preferencesServiceModule,
             appLevelModule,
-            settingsFeatureModule
+            settingsFeatureModule,
+            chatFeatureModule
         )
     }
 }

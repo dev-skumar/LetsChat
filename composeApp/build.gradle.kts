@@ -62,6 +62,7 @@ kotlin {
             implementation(projects.service.preferences)
 
             implementation(projects.feature.settings)
+            implementation(projects.feature.chat)
 
             implementation(compose.runtime)
             implementation(compose.foundation)

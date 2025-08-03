@@ -5,6 +5,7 @@
     "tags": [
       "UI"
     ],
+    "title": "",
     "description": "Implement Global Loading screen. and add it to Navigation graph when block for null appConfig",
     "status": "TODO",
     "date": {
@@ -28,6 +29,7 @@
     "tags": [
       "UI"
     ],
+    "title": "",
     "description": "Implement good Error Dialog UI in @Composable ModalErrorDialog",
     "status": "TODO",
     "date": {
@@ -51,6 +53,7 @@
     "tags": [
       "UI"
     ],
+    "title": "",
     "description": "Implement UI for OnboardingScreen",
     "status": "TODO",
     "date": {
@@ -74,6 +77,7 @@
     "tags": [
       "UI"
     ],
+    "title": "",
     "description": "Implement navigation handling for back button press",
     "status": "TODO",
     "date": {
@@ -87,6 +91,30 @@
         "minute": 41,
         "second": 42,
         "nano": 897556200
+      }
+    },
+    "isImported": false
+  },
+  {
+    "id": "TASK_38",
+    "priority": "LOW",
+    "tags": [
+      "UI"
+    ],
+    "title": "Home Screen UI",
+    "description": "- Implement HomeScreen sleek chatting interface",
+    "status": "TODO",
+    "date": {
+      "date": {
+        "year": 2025,
+        "month": 8,
+        "day": 3
+      },
+      "time": {
+        "hour": 11,
+        "minute": 43,
+        "second": 33,
+        "nano": 272237200
       }
     },
     "isImported": false
