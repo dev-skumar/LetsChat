@@ -5,8 +5,8 @@
     "tags": [
       "UI"
     ],
-    "title": "",
-    "description": "Implement Global Loading screen. and add it to Navigation graph when block for null appConfig",
+    "title": "Global Loading Screen",
+    "description": "- Implement Modern Global Loading screen.\n- This screen should be called in  Navigation graph, for condition (appConfig \u003d\u003d null)",
     "status": "TODO",
     "date": {
       "date": {
@@ -29,8 +29,8 @@
     "tags": [
       "UI"
     ],
-    "title": "",
-    "description": "Implement good Error Dialog UI in @Composable ModalErrorDialog",
+    "title": "Design Modal Error Dialog",
+    "description": "- Create good Error Dialog card to display error messages\n- Implement UI in core composable ModalErrorDialog",
     "status": "TODO",
     "date": {
       "date": {
@@ -53,8 +53,8 @@
     "tags": [
       "UI"
     ],
-    "title": "",
-    "description": "Implement UI for OnboardingScreen",
+    "title": "Onboarding Screen UI",
+    "description": "- Implement Onboardin Screen UI\n- Sleek \u0026 Modern screen to collect API key if key is not provided",
     "status": "TODO",
     "date": {
       "date": {
@@ -115,6 +115,30 @@
         "minute": 43,
         "second": 33,
         "nano": 272237200
+      }
+    },
+    "isImported": false
+  },
+  {
+    "id": "TASK_44",
+    "priority": "LOW",
+    "tags": [
+      "UI"
+    ],
+    "title": "Settings Screen UI",
+    "description": "- Implement Settings Screen UI",
+    "status": "TODO",
+    "date": {
+      "date": {
+        "year": 2025,
+        "month": 8,
+        "day": 3
+      },
+      "time": {
+        "hour": 17,
+        "minute": 1,
+        "second": 7,
+        "nano": 954551100
       }
     },
     "isImported": false

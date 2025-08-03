@@ -1,11 +1,8 @@
 package dev.skumar.letschat.navigation
 
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.style.TextAlign
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -18,6 +15,8 @@ import dev.skumar.letschat.feature.chat.presentation.home.HomeViewModel
 import dev.skumar.letschat.feature.chat.presentation.home.ui.HomeScreen
 import dev.skumar.letschat.feature.settings.presentation.onboarding.OnboardingViewModel
 import dev.skumar.letschat.feature.settings.presentation.onboarding.ui.OnboardingScreen
+import dev.skumar.letschat.feature.settings.presentation.settings.SettingsViewModel
+import dev.skumar.letschat.feature.settings.presentation.settings.ui.SettingsScreen
 import org.koin.compose.viewmodel.koinViewModel
 
 
@@ -71,12 +70,17 @@ fun NavigationGraph(
 
 
                 composable<Screen.Settings> {
-                    Text(
-                        text = "This is Settings Screen",
-                        textAlign = TextAlign.Center,
-                        modifier = Modifier
-                            .fillMaxWidth()
+
+                    val settingsVM = koinViewModel<SettingsViewModel>()
+                    val uiState by settingsVM.uiState.collectAsStateWithLifecycle()
+
+                    SettingsScreen(
+                        uiState = uiState,
+                        appConfig = appConfig,
+                        performNavigation = performNavigation,
+                        processEvent = settingsVM::processEvent
                     )
+
                 }
 
             }

@@ -14,7 +14,7 @@ import kotlinx.coroutines.flow.flow
 class UpdateAppConfig(
     private val preferencesRepository: PreferencesRepository
 ) {
-    operator fun invoke(appConfig: AppConfig): Flow<Result<Nothing>> = flow {
+    operator fun invoke(appConfig: AppConfig): Flow<Result<Unit>> = flow {
 
         try {
             emit(Result.Loading)
@@ -24,6 +24,8 @@ class UpdateAppConfig(
             }
 
             preferencesRepository.updateAppConfig(appConfig)
+
+            emit(Result.Success(Unit))
 
         } catch (e: Exception) {
 

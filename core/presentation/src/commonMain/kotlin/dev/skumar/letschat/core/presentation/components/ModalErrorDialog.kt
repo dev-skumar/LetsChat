@@ -17,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import dev.skumar.letschat.core.domain.error.ErrorDialog
+import dev.skumar.letschat.core.domain.utils.prettyPrint
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -46,8 +47,8 @@ fun ModalErrorDialog(
                     .padding(16.dp)
             ) {
                 Text(
-                    text = error.toString(),
-                    textAlign = TextAlign.Center,
+                    text = error.prettyPrint(),
+                    textAlign = TextAlign.Left,
                     modifier = Modifier
                         .fillMaxWidth()
                 )
