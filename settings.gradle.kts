@@ -42,5 +42,6 @@ include(":core:presentation")
 include(":service:preferences")
 
 include(":feature:settings")
+include(":feature:chat")
 
 include(":composeApp")

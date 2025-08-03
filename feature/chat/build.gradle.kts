@@ -11,7 +11,7 @@ plugins {
 kotlin {
 
     androidLibrary {
-        namespace = "dev.skumar.letschat.feature.settings"
+        namespace = "dev.skumar.letschat.feature.chat"
         compileSdk = libs.versions.android.compileSdk.get().toInt()
         minSdk = libs.versions.android.minSdk.get().toInt()
 
@@ -51,6 +51,7 @@ kotlin {
         androidMain {
             dependencies {}
         }
+
     }
 
 }
