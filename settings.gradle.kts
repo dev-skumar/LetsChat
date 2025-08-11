@@ -39,6 +39,7 @@ plugins {
 include(":core:domain")
 include(":core:presentation")
 
+include(":service:agent")
 include(":service:preferences")
 
 include(":feature:settings")
