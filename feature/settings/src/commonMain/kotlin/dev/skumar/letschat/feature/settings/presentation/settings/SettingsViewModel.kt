@@ -34,6 +34,10 @@ class SettingsViewModel(
                     _uiState.update { it.copy(apiKeyField = event.newValue) }
                 }
 
+                is SettingsEvent.UpdateSystemPromptField -> {
+                    _uiState.update { it.copy(systemPromptField = event.newValue) }
+                }
+
                 is SettingsEvent.UpdateAppConfig -> {
                     updateAppConfig(event.config)
                 }
@@ -54,6 +58,7 @@ class SettingsViewModel(
                     _uiState.update {
                         it.copy(
                             apiKeyField = "",
+                            systemPromptField = "",
                             isLoading = false
                         )
                     }

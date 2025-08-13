@@ -7,6 +7,8 @@ sealed class SettingsEvent {
 
     data class UpdateApiKeyField(val newValue: String): SettingsEvent()
 
+    data class UpdateSystemPromptField(val newValue: String): SettingsEvent()
+
     data class UpdateAppConfig(val config: AppConfig): SettingsEvent()
 
 }

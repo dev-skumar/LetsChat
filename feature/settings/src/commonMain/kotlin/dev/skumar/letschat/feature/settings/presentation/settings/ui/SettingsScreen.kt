@@ -74,6 +74,9 @@ fun SettingsScreen(
                         .fillMaxWidth()
                 )
 
+                Spacer(modifier = Modifier.height(16.dp))
+
+
                 OutlinedTextField(
 
                     value = uiState.apiKeyField,
@@ -114,7 +117,52 @@ fun SettingsScreen(
                     }
                 ) {
                     Text(
-                        text = "Submit"
+                        text = "Submit Api Key"
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(32.dp))
+
+                OutlinedTextField(
+
+                    value = uiState.systemPromptField,
+                    textStyle = LocalTextStyle.current.copy(),
+                    onValueChange = {
+                        processEvent(SettingsEvent.UpdateSystemPromptField(it))
+                    },
+
+                    label = {
+                        Text(
+                            text = "System Prompt:",
+                            fontStyle = FontStyle.Italic,
+                            color = Color.LightGray
+                        )
+                    },
+
+                    supportingText = {
+                        Text(text = "Write a system prompt for setting up agents behaviour")
+                    },
+
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Text,
+                        imeAction = ImeAction.Done
+                    )
+
+                )
+
+                Button(
+                    onClick = {
+                        processEvent(SettingsEvent.UpdateAppConfig(
+                            appConfig.copy(
+                                agentConfiguration = appConfig.agentConfiguration.copy(
+                                    systemPrompt = uiState.systemPromptField
+                                )
+                            )
+                        ))
+                    }
+                ) {
+                    Text(
+                        text = "Confirm System Prompt"
                     )
                 }
 
