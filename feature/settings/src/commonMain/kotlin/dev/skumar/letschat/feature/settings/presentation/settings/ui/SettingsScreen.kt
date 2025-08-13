@@ -106,8 +106,8 @@ fun SettingsScreen(
                     onClick = {
                         processEvent(SettingsEvent.UpdateAppConfig(
                             appConfig.copy(
-                                apiInfo = appConfig.apiInfo.copy(
-                                    key = uiState.apiKeyField
+                                agentConfiguration = appConfig.agentConfiguration.copy(
+                                    apiKey = uiState.apiKeyField
                                 )
                             )
                         ))

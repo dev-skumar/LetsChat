@@ -53,7 +53,7 @@ fun OnboardingScreen(
             ) {
 
                 Text(
-                    text = appConfig.apiInfo.key.ifEmpty { "Api Key is not provided." },
+                    text = appConfig.agentConfiguration.apiKey.ifEmpty { "Api Key is not provided." },
                     textAlign = TextAlign.Center,
                     modifier = Modifier
                         .fillMaxWidth()
@@ -91,8 +91,8 @@ fun OnboardingScreen(
                 Button(
                     onClick = {
                         val newConfig = appConfig.copy(
-                            apiInfo = appConfig.apiInfo.copy(
-                                key = uiState.apiKeyFieldValue
+                            agentConfiguration = appConfig.agentConfiguration.copy(
+                                apiKey = uiState.apiKeyFieldValue
                             )
                         )
                         processEvent(OnboardingEvent.UpdateAppConfig(newConfig))

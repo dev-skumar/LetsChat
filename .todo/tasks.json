@@ -142,5 +142,29 @@
       }
     },
     "isImported": false
+  },
+  {
+    "id": "TASK_51",
+    "priority": "HIGH",
+    "tags": [
+      "Feature"
+    ],
+    "title": "System prompt field in settings screen",
+    "description": "Implement optional system prompt field in settings screen and implements its logic in settings screen viewmodel",
+    "status": "TODO",
+    "date": {
+      "date": {
+        "year": 2025,
+        "month": 8,
+        "day": 13
+      },
+      "time": {
+        "hour": 11,
+        "minute": 53,
+        "second": 43,
+        "nano": 571097200
+      }
+    },
+    "isImported": false
   }
 ]

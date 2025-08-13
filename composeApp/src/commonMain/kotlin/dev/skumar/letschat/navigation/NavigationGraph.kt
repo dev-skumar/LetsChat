@@ -37,7 +37,7 @@ fun NavigationGraph(
 
             NavHost(
                 navController = navController,
-                startDestination = if (appConfig.apiInfo.key.isEmpty()) Screen.Onboarding else Screen.Home
+                startDestination = if (appConfig.agentConfiguration.apiKey.isEmpty()) Screen.Onboarding else Screen.Home
             ) {
 
                 composable<Screen.Onboarding> {

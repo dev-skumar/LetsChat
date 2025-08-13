@@ -19,7 +19,7 @@ class UpdateAppConfig(
         try {
             emit(Result.Loading)
 
-            if (appConfig.apiInfo.key.isEmpty()) {
+            if (appConfig.agentConfiguration.apiKey.isEmpty()) {
                 throw ValidationException("Api Key Cannot be empty!")
             }
 

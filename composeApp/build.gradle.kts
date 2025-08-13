@@ -60,6 +60,7 @@ kotlin {
             implementation(projects.core.presentation)
 
             implementation(projects.service.preferences)
+            implementation(projects.service.agent)
 
             implementation(projects.feature.settings)
             implementation(projects.feature.chat)
