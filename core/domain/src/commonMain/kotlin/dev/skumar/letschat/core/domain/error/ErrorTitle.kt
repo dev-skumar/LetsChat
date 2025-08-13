@@ -6,4 +6,6 @@ object ErrorTitle {
 
     const val APPLICATION_ERROR = "Application Error"
 
+    const val AGENT_ERROR = "AI Agent Error"
+
 }

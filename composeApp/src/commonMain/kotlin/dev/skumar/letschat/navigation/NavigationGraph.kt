@@ -2,6 +2,7 @@ package dev.skumar.letschat.navigation
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavHostController
@@ -58,6 +59,10 @@ fun NavigationGraph(
 
                     val homeVM = koinViewModel<HomeViewModel>()
                     val uiState by homeVM.uiState.collectAsStateWithLifecycle()
+
+                    LaunchedEffect(Unit) {
+                        homeVM.initializeAgent(appConfig.agentConfiguration)
+                    }
 
                     HomeScreen(
                         uiState = uiState,

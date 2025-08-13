@@ -142,5 +142,29 @@
       }
     },
     "isImported": false
+  },
+  {
+    "id": "TASK_51",
+    "priority": "MEDIUM",
+    "tags": [
+      "Feature"
+    ],
+    "title": "Implement Logger Utility",
+    "description": "- Add Kermit Logger Utility in project\n- Inside all usecases for general exception log the error to logger",
+    "status": "TODO",
+    "date": {
+      "date": {
+        "year": 2025,
+        "month": 8,
+        "day": 13
+      },
+      "time": {
+        "hour": 22,
+        "minute": 0,
+        "second": 28,
+        "nano": 817693400
+      }
+    },
+    "isImported": false
   }
 ]
