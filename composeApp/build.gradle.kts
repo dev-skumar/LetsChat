@@ -61,6 +61,7 @@ kotlin {
 
             implementation(projects.service.preferences)
             implementation(projects.service.agent)
+            implementation(projects.service.logger)
 
             implementation(projects.feature.settings)
             implementation(projects.feature.chat)
