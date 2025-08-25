@@ -41,6 +41,7 @@ include(":core:presentation")
 
 include(":service:agent")
 include(":service:preferences")
+include(":service:logger")
 
 include(":feature:settings")
 include(":feature:chat")
